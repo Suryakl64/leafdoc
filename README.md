@@ -2,7 +2,7 @@
 
 LeafDoc is an intelligent agricultural tool designed to help farmers and gardeners identify plant diseases in real-time. The system uses a **Flask-based backend** with a Deep Learning model (CNN) to analyze leaf images, and a mobile-friendly **frontend** to display diagnoses and treatment plans.
 
-## 📂 Project Structure
+## Project Structure
 
 * **frontend/**
     * Contains the user-facing mobile application interface (React Native/Flutter).
@@ -23,7 +23,7 @@ LeafDoc is an intelligent agricultural tool designed to help farmers and gardene
 
 ---
 
-## 🚀 Features
+## Features
 
 * **Real-Time Diagnosis:** Instantly identifies diseases like Tomato Blight or Potato Rot from a photo.
 * **Treatment Guide:** Provides organic and chemical solutions for identified issues.
@@ -32,7 +32,7 @@ LeafDoc is an intelligent agricultural tool designed to help farmers and gardene
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 * **Frontend:** React Native / Flutter
 * **Backend:** Python (Flask)
@@ -56,7 +56,7 @@ Farmers lose significant crop yields due to delayed disease identification. Leaf
 
 ---
 
-## ⚙️ Quick Start – Local Development
+## Quick Start – Local Development
 
 Follow these steps to run **LeafDoc** locally using Docker.
 
@@ -64,3 +64,17 @@ Follow these steps to run **LeafDoc** locally using Docker.
 ```bash
 git clone [https://github.com/Suryakl64/leafdoc.git](https://github.com/Suryakl64/leafdoc.git)
 cd leafdoc
+```
+
+---
+
+## Software Design
+
+LeafDoc utilizes a containerized, microservices-based Client-Server architecture to ensure high maintainability and low coupling. The backend separates authentication, API routing, and Python-based AI image processing into distinct services, while the frontend UI is built with reusable, mobile-friendly React components. 
+
+**Architecture Diagram:**
+<img width="940" height="591" alt="image" src="https://github.com/user-attachments/assets/ae1d99e3-4bb9-47ae-bb13-671cfd249f82" />
+
+
+**UI/UX Prototype:**
+https://www.figma.com/make/cJinoIJyQRoZFGMHjUJYxh/Untitled?fullscreen=1&t=LY2AccA3elwEJMt2-1

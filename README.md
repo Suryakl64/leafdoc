@@ -3,9 +3,8 @@
 
 A comprehensive full-stack application for detecting plant diseases using deep learning. Built with React, FastAPI, TensorFlow/Keras, and MongoDB.
 
-![LeafDoc Banner](https://via.placeholder.com/1200x300/0a3d2e/f5f5dc?text=LeafDoc+Plant+Disease+Detection)
 
-## 🌱 Features
+##  Features
 
 ### Core Functionality
 - **Image Upload & Analysis**: Drag-and-drop or browse to upload plant leaf images
@@ -28,7 +27,7 @@ A comprehensive full-stack application for detecting plant diseases using deep l
 - **Transfer Learning**: ResNet50 backbone with custom classification layers
 - **Responsive UI**: Beautiful, nature-inspired design with animations
 
-## 🎯 System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────┐      ┌──────────────────┐      ┌─────────────────┐
@@ -43,7 +42,7 @@ A comprehensive full-stack application for detecting plant diseases using deep l
                          └──────────────────┘
 ```
 
-## 📋 Prerequisites
+##  Prerequisites
 
 ### Required Software
 - **Python 3.8+** (for backend)
@@ -56,7 +55,7 @@ A comprehensive full-stack application for detecting plant diseases using deep l
 - **Storage**: 5GB free space for models and dataset
 - **GPU**: Optional but recommended for training (NVIDIA with CUDA support)
 
-## 🚀 Installation
+##  Installation
 
 ### 1. Clone Repository
 
@@ -141,7 +140,7 @@ Open your browser and navigate to:
 - **API Documentation**: http://localhost:8000/docs
 - **Health Check**: http://localhost:8000/health
 
-## 📊 Training Your Own Model
+##  Training Your Own Model
 
 ### 1. Prepare Dataset
 
@@ -192,7 +191,7 @@ tensorboard --logdir=logs
 # Open browser to http://localhost:6006
 ```
 
-## 🔌 API Endpoints
+##  API Endpoints
 
 ### Prediction
 ```http
@@ -278,7 +277,7 @@ Response:
 
 Full API documentation available at http://localhost:8000/docs
 
-## 🗄️ Database Schema
+##  Database Schema
 
 ### Collections
 
@@ -319,7 +318,7 @@ Full API documentation available at http://localhost:8000/docs
 
 See [database_schema.md](docs/database_schema.md) for complete schema documentation.
 
-## 🎨 Frontend Components
+##  Frontend Components
 
 ### Main Components
 - **App.jsx**: Main application component
@@ -355,7 +354,7 @@ The model can detect 38+ plant diseases including:
 - Mosaic Virus
 - And more...
 
-## 🛠️ Development
+##  Development
 
 ### Code Structure
 
@@ -399,7 +398,7 @@ cd frontend
 npm run lint
 ```
 
-## 🔒 Security Considerations
+##  Security Considerations
 
 - **Input Validation**: All uploaded images are validated
 - **Rate Limiting**: API endpoints protected against abuse
@@ -407,7 +406,7 @@ npm run lint
 - **File Size Limits**: Maximum 10MB per image upload
 - **Sanitization**: User inputs sanitized before database storage
 
-## 🚢 Deployment
+##  Deployment
 
 ### Docker Deployment
 
@@ -431,11 +430,11 @@ docker-compose up -d
 6. **CDN**: Use CDN for static assets
 7. **Load Balancing**: Configure reverse proxy (Nginx)
 
-## 📝 License
+##  License
 
 This project is licensed under the MIT License - see LICENSE file for details.
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -445,14 +444,14 @@ Contributions are welcome! Please follow these steps:
 4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open Pull Request
 
-## 📧 Support
+##  Support
 
 For issues and questions:
 - **GitHub Issues**: [Create an issue](https://github.com/yourusername/plant-disease-detection/issues)
 - **Email**: support@leafdoc.com
 - **Documentation**: [Full docs](https://docs.leafdoc.com)
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **PlantVillage Dataset**: Training data source
 - **TensorFlow/Keras**: Deep learning framework
@@ -460,7 +459,7 @@ For issues and questions:
 - **React**: UI framework
 - **MongoDB**: Database solution
 
-## 📚 References
+##  References
 
 1. [PlantVillage Dataset](https://www.plantvillage.psu.edu/)
 2. [Deep Learning for Plant Disease Detection](https://arxiv.org/abs/...)
@@ -469,7 +468,7 @@ For issues and questions:
 
 ---
 
-**Built with ❤️ for farmers and agricultural professionals**
+**Built for farmers and agricultural professionals**
 
 **Version**: 1.0.0  
 **Last Updated**: March 2026

@@ -1,0 +1,128 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36 Edg/145.0.0.0" version="29.6.0">
+  <diagram name="LeafDoc Architecture" id="architecture">
+    <mxGraphModel dx="1695" dy="757" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=24;fontStyle=1;fontColor=#2E75B6;" value="LeafDoc - Client-Server Microservices Architecture" vertex="1">
+          <mxGeometry height="40" width="600" x="310" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;dashed=1;" value="" vertex="1">
+          <mxGeometry height="220" width="200" x="200" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="frontend-label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#2E75B6;" value="Frontend Layer" vertex="1">
+          <mxGeometry height="30" width="160" x="220" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="react" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;" value="React.js&#xa;Web App" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="mobile" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;" value="Mobile&#xa;Interface" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="nginx" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=12;fontStyle=1;" value="Nginx&#xa;Load Balancer" vertex="1">
+          <mxGeometry height="80" width="120" x="480" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="api-gateway" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;align=left;spacingLeft=10;" value="API Gateway&#xa;(Node.js/Express)&#xa;&#xa;• Request Routing&#xa;• JWT Validation&#xa;• CORS Handling" vertex="1">
+          <mxGeometry height="140" width="160" x="680" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="services-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;dashed=1;" value="" vertex="1">
+          <mxGeometry height="380" width="220" x="920" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="services-label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#2E75B6;" value="Microservices Layer" vertex="1">
+          <mxGeometry height="30" width="200" x="930" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="auth-service" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;align=left;spacingLeft=10;" value="Authentication Service&#xa;(Node.js)&#xa;&#xa;• User Registration&#xa;• Login/Logout&#xa;• JWT Generation&#xa;• Profile Management" vertex="1">
+          <mxGeometry height="120" width="180" x="940" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="ai-service" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;align=left;spacingLeft=10;" value="AI Service&#xa;(Python/Flask)&#xa;&#xa;• Image Preprocessing&#xa;• Disease Detection&#xa;• Confidence Scoring&#xa;• Treatment Suggestions" vertex="1">
+          <mxGeometry height="130" width="180" x="940" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="data-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;strokeWidth=2;dashed=1;" value="" vertex="1">
+          <mxGeometry height="180" width="220" x="920" y="570" as="geometry" />
+        </mxCell>
+        <mxCell id="data-label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1;fontColor=#2E75B6;" value="Data Layer" vertex="1">
+          <mxGeometry height="30" width="200" x="930" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="mongodb" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="MongoDB&#xa;&#xa;User Data&#xa;Analysis Metadata" vertex="1">
+          <mxGeometry height="100" width="80" x="950" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" value="AWS S3&#xa;&#xa;Leaf Images&#xa;Object Storage" vertex="1">
+          <mxGeometry height="100" width="80" x="1050" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="docker-label" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontColor=#FF6C00;" value="Docker Containerized Environment" vertex="1">
+          <mxGeometry height="30" width="280" x="470" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" edge="1" parent="1" source="jEsFrim_qBSzo3ifEfBe-6" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#2E75B6;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="react" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+            <mxPoint x="130" y="297.43589743589746" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" edge="1" parent="1" source="react" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#2E75B6;fontSize=10;" target="nginx" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge3" edge="1" parent="1" source="mobile" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#2E75B6;" target="nginx" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge4" edge="1" parent="1" source="nginx" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#2E75B6;fontSize=10;" target="api-gateway" value="Load Balance">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge5" edge="1" parent="1" source="api-gateway" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#82b366;fontSize=10;" target="auth-service" value="REST API&#xa;/auth/*">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge6" edge="1" parent="1" source="api-gateway" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#82b366;fontSize=10;" target="ai-service" value="REST API&#xa;/analyze">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge7" edge="1" parent="1" source="auth-service" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#6c8ebf;dashed=1;" target="mongodb" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="470" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge8" edge="1" parent="1" source="ai-service" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#6c8ebf;dashed=1;" target="mongodb" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="edge9" edge="1" parent="1" source="ai-service" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#6c8ebf;dashed=1;" target="s3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-box" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" value="" vertex="1">
+          <mxGeometry height="150" width="150" x="40" y="500" as="geometry" />
+        </mxCell>
+        <mxCell id="legend-title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;" value="Legend" vertex="1">
+          <mxGeometry height="30" width="100" x="65" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="legend1" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#2E75B6;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="555" as="sourcePoint" />
+            <mxPoint x="100" y="555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend1-text" parent="1" style="text;html=1;align=left;fontSize=10;" value="HTTP/HTTPS" vertex="1">
+          <mxGeometry height="20" width="80" x="105" y="545" as="geometry" />
+        </mxCell>
+        <mxCell id="legend2" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#82b366;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="585" as="sourcePoint" />
+            <mxPoint x="100" y="585" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend2-text" parent="1" style="text;html=1;align=left;fontSize=10;" value="REST API" vertex="1">
+          <mxGeometry height="20" width="80" x="105" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="legend3" edge="1" parent="1" style="endArrow=classic;html=1;strokeWidth=2;strokeColor=#6c8ebf;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="50" y="615" as="sourcePoint" />
+            <mxPoint x="100" y="615" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="legend3-text" parent="1" style="text;html=1;align=left;fontSize=10;" value="Data Access" vertex="1">
+          <mxGeometry height="20" width="80" x="105" y="605" as="geometry" />
+        </mxCell>
+        <mxCell id="jEsFrim_qBSzo3ifEfBe-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="User" vertex="1">
+          <mxGeometry height="60" width="120" x="10" y="280" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

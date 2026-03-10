@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Python
 __pycache__/
 *.py[cod]
@@ -103,3 +104,24 @@ coverage/
 *.bak
 *.swp
 *~
+=======
+# Python temporary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual Environments
+venv/
+env/
+.env
+
+# Docker & VS Code
+.vscode/
+.idea/
+docker-compose.override.yml
+
+# System junk
+.DS_Store
+Thumbs.db
+>>>>>>> 90661636fa13801d10284021a8d9fb2338ddc444
